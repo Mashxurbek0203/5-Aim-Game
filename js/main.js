@@ -89,7 +89,7 @@ board.addEventListener('click', event => {
 function createRandomCircle() {
     const circle = document.createElement('div');
     circle.classList.add('circle')
-    const circleSize = getRandomNumber(10, 60)
+    const circleSize = getRandomNumber(16, 60)
     const { width, height } = board.getBoundingClientRect()
     const xDir = getRandomNumber(0, width - circleSize)
     const yDir = getRandomNumber(0, height - circleSize)

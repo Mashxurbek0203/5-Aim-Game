@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,regular,600,700,800" rel="stylesheet" />
+    <title>Aim-Game</title>
+</head>
+
+<body class="body">
+    <header class="main-header header">
+        <div class="container">
+            <a href="https://www.instagram.com/mashxurbek_03_02/" class="header__logo" target="_blank">Mashxurbek</a>
+            <button type="button" class="header__btn"><i class="fas fas fa-info-circle"></i></button>
+        </div>
+    </header>
+    <div class="screen" tabindex="-1">
+        <h1 class="title">Aim Training</h1>
+        <a href="#" class="start" id="start">Начать игру</a>
+    </div>
+    <div class="screen" tabindex="-1">
+        <h1 class="title">Выберите время</h1>
+        <ul id="time-list" class="time-list">
+            <li class="time-item">
+                <button class="time-btn" type="button">10 сек</button>
+            </li>
+            <li class="time-item">
+                <button class="time-btn" type="button">20 сек</button>
+            </li>
+            <li class="time-item">
+                <button class="time-btn" type="button">30 сек</button>
+            </li>
+        </ul>
+    </div>
+    <div class="screen" tabindex="-1">
+        <h3 class="time-wrapper">Осталось<span id="time">00:00</span></h3>
+        <div class="board" id="board">
+            <button class="board__try-btn" type="reset">Попробовать ещё <i class="fas fa-redo"></i></button>
+        </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1">
+        <div class="modal__header">
+            Об игре
+        </div>
+        <div class="modal__body">
+            <p class="modal__description">
+                Жми на круг сколько можешь пока не истечет время.
+            </p>
+        </div>
+        <div class="modal__footer">
+            <button class="modal__close-btn">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
